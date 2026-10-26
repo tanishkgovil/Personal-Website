@@ -1,0 +1,80 @@
+/* This screening owns its framing, captions, and work explanations. */
+#screen[data-screening="nyc"] { --nyc-night: #0b1117; --nyc-paper: #e8e0ca; --nyc-text: #f6e9cc; }
+#screen[data-screening="nyc"] .cover { align-items: flex-end; padding: 7% 8%; }
+#screen[data-screening="nyc"] .cover.has-image::before { background: linear-gradient(0deg, #09131bea, #111c2566 54%, #111c2511); }
+#screen[data-screening="nyc"] .cover h1 { font-size: clamp(38px, 7.6cqw, 100px); }
+#screen[data-screening="nyc"] .play-button { margin-top: 25px; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip, .nyc-editorial) { position: relative; width: 100%; height: 100%; min-height: 0; overflow: hidden; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) { background: var(--nyc-night); color: var(--nyc-text); }
+#screen[data-screening="nyc"] :is(.nyc-image, .nyc-video) { display: block; width: 100%; height: 100%; min-height: 0; }
+#screen[data-screening="nyc"] .nyc-media { position:absolute;inset:0;overflow:hidden; }
+#screen[data-screening="nyc"] .nyc-media > :is(img,video) { position:absolute;max-width:none;max-height:none; }
+#screen[data-screening="nyc"] .nyc-backdrop { position:absolute;inset:0;width:100%;height:100%;pointer-events:none; }
+#screen[data-screening="nyc"] .nyc-video { cursor: pointer; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip).has-caption::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, #030a12a8, transparent 48%); pointer-events: none; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) > .nyc-copy { position: absolute; z-index: 1; left: 4%; right: 4%; bottom: 5%; max-width: 45em; pointer-events: none; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) .nyc-copy h2 { font: 400 clamp(17px, 1.8cqw, 23px)/1.3 var(--sans); letter-spacing: 0; }
+#screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) .nyc-copy p { max-width: 38em; margin-top: 8px; font-size: clamp(12px, 1.3cqw, 16px); line-height: 1.5; color: #e0d5c0; }
+
+/* Work scenes: only the project and its explanation. */
+#screen[data-screening="nyc"] .nyc-editorial { display: flex; flex-direction: column; padding: clamp(14px, 5cqh, 35px) 6%; background: var(--nyc-paper); color: #343c30; }
+#screen[data-screening="nyc"] .nyc-editorial .nyc-copy h2 { font: 400 clamp(26px, 6cqh, 48px)/1.08 var(--serif); letter-spacing: -.035em; }
+#screen[data-screening="nyc"] .nyc-editorial .nyc-copy p { margin-top: 12px; font-size: clamp(12px, 2.5cqh, 16px); line-height: 1.5; color: #65634f; max-width: 45em; pointer-events: none; }
+#screen[data-screening="nyc"] .nyc-review-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding-top: clamp(12px, 4cqh, 28px); }
+#screen[data-screening="nyc"] .nyc-review-steps button { display: flex; flex-direction: column; gap: 8px; padding: clamp(8px, 2.2cqh, 16px) 12px; border: 1px solid #9c9a7f77; background: transparent; color: #5b614a; text-align: left; font-size: 13px; }
+#screen[data-screening="nyc"] .nyc-review-steps button > span { font: 9px var(--mono); opacity: .6; }
+#screen[data-screening="nyc"] .nyc-review-steps button[aria-pressed="true"] { background: #546046; border-color: #546046; color: #fff0ce; }
+#screen[data-screening="nyc"] .nyc-review-detail { flex: 1; min-height: 0; display: flex; flex-direction: column; justify-content: center; padding: 16px 0; }
+#screen[data-screening="nyc"] .nyc-review-detail h3 { margin: 0; font: clamp(20px, 4.3cqh, 29px)/1.2 var(--serif); letter-spacing: -.02em; }
+#screen[data-screening="nyc"] .nyc-review-detail p { margin-top: 10px; font-size: clamp(12px, 2.6cqh, 16px); line-height: 1.5; color: #69634f; max-width: 55em; }
+#screen[data-screening="nyc"] :is(.nyc-review-foot, .nyc-metrics-foot) { display: flex; justify-content: space-between; gap: 15px; align-items: center; padding-top: 10px; margin-top: auto; border-top: 1px solid #b5a98b70; font: 10px/1.5 var(--mono); color: #7a7056; }
+#screen[data-screening="nyc"] .nyc-metric-board { flex: 1; min-height: 0; display: grid; grid-template-rows: repeat(3, minmax(0,1fr)); padding-top: 14px; }
+#screen[data-screening="nyc"] .nyc-metric-row { display: grid; grid-template-columns: 1fr 70px 120px; gap: 15px; align-items: center; border-bottom: 1px solid #b5a98b55; padding: 4px 0; font-size: 14px; min-height: 0; }
+#screen[data-screening="nyc"] .nyc-metric-row strong { font: clamp(20px, 4.8cqh, 30px)/1 var(--serif); }
+#screen[data-screening="nyc"] .nyc-series-status { font: 10px var(--mono); text-align: right; color: #62704c; }
+#screen[data-screening="nyc"] .nyc-metric-row.is-pruned { opacity: .4; }
+#screen[data-screening="nyc"] .nyc-metric-row.is-pruned strong { text-decoration: line-through; }
+#screen[data-screening="nyc"] .nyc-metric-row.is-inactive { opacity: .35; }
+#screen[data-screening="nyc"] .nyc-metrics-action { display: flex; align-items: center; gap: 20px; padding: 16px 0; }
+#screen[data-screening="nyc"] .nyc-action { border: 1px solid #7e896c; padding: 10px 13px; background: #566246; color: #fff0ce; font-size: 12px; white-space: nowrap; }
+#screen[data-screening="nyc"] .nyc-action > span { margin-left: 18px; }
+#screen[data-screening="nyc"] .nyc-metrics-result { font-size: 12px; line-height: 1.5; color: #69634f; }
+#screen[data-screening="nyc"] .nyc-metrics-foot a { color: #605337; }
+#screen[data-screening="nyc"] .nyc-metric-tabs { display:flex;gap:8px;padding-top:14px; }
+#screen[data-screening="nyc"] .nyc-metric-tabs .nyc-action[aria-pressed="false"] { color:#566246;background:transparent; }
+#screen[data-screening="nyc"] .nyc-metric-content { display:flex;flex-direction:column;flex:1;min-height:0; }
+#screen[data-screening="nyc"] .nyc-review-detail .nyc-metric-examples { font:10px/1.6 var(--mono);overflow-wrap:anywhere;color:#7a7056; }
+
+@media (max-width: 600px) and (orientation: portrait) {
+  #screen[data-screening="nyc"] .cover { padding: 12% 8%; }
+  #screen[data-screening="nyc"] .cover h1 { font-size: clamp(37px, 13cqw, 60px); }
+  #screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) > .nyc-copy { left: 7%; right: 7%; bottom: 6%; }
+  #screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) .nyc-copy h2 { font-size: 17px; }
+  #screen[data-screening="nyc"] :is(.nyc-photo, .nyc-clip) .nyc-copy p { font-size: 13px; }
+  #screen[data-screening="nyc"] .nyc-editorial { padding-left: 8%; padding-right: 8%; }
+  #screen[data-screening="nyc"] .nyc-review-steps { grid-template-columns: 1fr 1fr; }
+  #screen[data-screening="nyc"] .nyc-review-steps button { padding: 11px; font-size: 12px; }
+  #screen[data-screening="nyc"] :is(.nyc-review-foot, .nyc-metrics-foot) { font-size: 8px; }
+  #screen[data-screening="nyc"] .nyc-metric-row { grid-template-columns: 1fr 40px 80px; gap: 8px; font-size: 12px; }
+  #screen[data-screening="nyc"] .nyc-series-status { font-size: 8px; }
+  #screen[data-screening="nyc"] .nyc-metrics-action { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@container (max-height: 430px) {
+  #screen[data-screening="nyc"] .nyc-editorial { padding-top: 12px; padding-bottom: 12px; }
+  #screen[data-screening="nyc"] .nyc-editorial .nyc-copy h2 { font-size: 25px; }
+  #screen[data-screening="nyc"] .nyc-editorial .nyc-copy p { margin-top: 8px; font-size: 11px; }
+  #screen[data-screening="nyc"] .nyc-review-steps { padding-top: 12px; gap: 6px; }
+  #screen[data-screening="nyc"] .nyc-review-steps button { padding: 7px 9px; font-size: 11px; gap: 5px; }
+  #screen[data-screening="nyc"] .nyc-review-steps button > span { font-size: 8px; }
+  #screen[data-screening="nyc"] .nyc-review-detail { padding: 12px 0; }
+  #screen[data-screening="nyc"] .nyc-review-detail h3 { font-size: 20px; }
+  #screen[data-screening="nyc"] .nyc-review-detail p { font-size: 11px; margin-top: 7px; }
+  #screen[data-screening="nyc"] :is(.nyc-review-foot, .nyc-metrics-foot) { font-size: 8px; padding-top: 7px; }
+  #screen[data-screening="nyc"] .nyc-metric-board { padding-top: 8px; }
+  #screen[data-screening="nyc"] .nyc-metric-row { padding: 3px 0; font-size: 11px; }
+  #screen[data-screening="nyc"] .nyc-metric-row strong { font-size: 20px; }
+  #screen[data-screening="nyc"] .nyc-series-status { font-size: 8px; }
+  #screen[data-screening="nyc"] .nyc-metrics-action { padding: 9px 0; gap: 10px; }
+  #screen[data-screening="nyc"] .nyc-action { padding: 7px 10px; font-size: 10px; }
+  #screen[data-screening="nyc"] .nyc-metrics-result { font-size: 10px; }
+}

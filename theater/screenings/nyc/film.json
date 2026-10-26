@@ -1,0 +1,313 @@
+{
+  "title": "A Summer in New York",
+  "module": "film-scenes.js",
+  "shots": [
+    {
+      "id": "opening",
+      "type": "image",
+      "src": "media/sunset-skyline.jpg",
+      "duration": 4,
+      "title": "NYC",
+      "subtitle": "Summer 2026",
+      "treatment": "title",
+      "y": 0.52,
+      "motion": {
+        "y": 0.52,
+        "zoom": 1.04
+      }
+    },
+    {
+      "id": "arrival",
+      "type": "image",
+      "src": "media/night-skyline.jpg",
+      "duration": 3,
+      "title": "I spent the summer in New York.",
+      "y": 0.55,
+      "motion": {
+        "y": 0.55,
+        "zoom": 1.025
+      }
+    },
+    {
+      "id": "apartment",
+      "type": "video",
+      "src": "media/apartment-tour.mp4",
+      "duration": 10,
+      "title": "My apartment for the summer.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1,
+      "trimStart": 0
+    },
+    {
+      "id": "knicks",
+      "type": "video",
+      "src": "media/knicks-win.mp4",
+      "duration": 12,
+      "fit": "contain",
+      "y": 0.5,
+      "transition": 0.12,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "title": "Knicks just won.",
+      "trimStart": 0
+    },
+    {
+      "id": "brooklyn",
+      "type": "image",
+      "src": "media/brooklyn-basketball.jpg",
+      "duration": 3,
+      "title": "Basketball in Brooklyn.",
+      "y": 0.38,
+      "motion": {
+        "y": 0.5,
+        "zoom": 1.03
+      }
+    },
+    {
+      "id": "work",
+      "type": "image",
+      "src": "media/office-view.jpg",
+      "duration": 6,
+      "title": "I interned at HRT.",
+      "subtitle": "I built an AI review agent and worked on Caddy’s metrics.",
+      "y": 0.45,
+      "motion": {
+        "x": 0.45,
+        "zoom": 1.04
+      }
+    },
+    {
+      "id": "heimdall",
+      "type": "custom",
+      "key": "heimdall",
+      "duration": 10
+    },
+    {
+      "id": "caddy",
+      "type": "custom",
+      "key": "caddy",
+      "duration": 10
+    },
+    {
+      "id": "food",
+      "type": "image",
+      "src": "media/bungalow-food.jpg",
+      "duration": 3,
+      "fit": "contain",
+      "title": "Bungalow.",
+      "rotation": -90,
+      "y": 0.5,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "vikas-khanna",
+      "type": "image",
+      "src": "media/vikas-khanna.jpg",
+      "duration": 3,
+      "fit": "contain",
+      "title": "Met Vikas Khanna.",
+      "y": 0.5,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "khaosan",
+      "type": "image",
+      "src": "media/khaosan.jpg",
+      "duration": 3.5,
+      "title": "Khaosan.",
+      "subtitle": "With my parents.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "beauty-and-essex",
+      "type": "image",
+      "src": "media/beauty-and-essex.jpg",
+      "duration": 3.5,
+      "title": "Beauty & Essex.",
+      "subtitle": "Ice cream–filled cherries.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "frida-batidos",
+      "type": "image",
+      "src": "media/frida-batidos.jpg",
+      "duration": 5.5,
+      "title": "Frida Batidos.",
+      "subtitle": "Best black bean burger I’ve ever had.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "axe-throwing",
+      "type": "video",
+      "src": "media/axe-throw.mp4",
+      "duration": 7,
+      "trimStart": 1,
+      "fit": "contain",
+      "y": 0.5,
+      "transition": 0.15,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "title": "goat of axe throwing"
+    },
+    {
+      "id": "july-fourth",
+      "type": "image",
+      "src": "media/july-fourth.jpg",
+      "duration": 4,
+      "title": "July 4th.",
+      "x": 0.9,
+      "y": 0.55,
+      "motion": {
+        "x": 1,
+        "y": 0.55,
+        "zoom": 1.04
+      }
+    },
+    {
+      "id": "broadway",
+      "type": "image",
+      "src": "media/hadestown.jpg",
+      "duration": 3,
+      "fit": "contain",
+      "title": "Hadestown.",
+      "y": 0.5,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "orchestra",
+      "type": "video",
+      "src": "media/star-wars.mp4",
+      "duration": 10.2,
+      "trimStart": 0,
+      "fit": "contain",
+      "y": 0.5,
+      "transition": 0.3,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "title": "Return of the Jedi.",
+      "subtitle": "With a live orchestra."
+    },
+    {
+      "id": "pizza-and-world-cup",
+      "type": "image",
+      "src": "media/adriennes-pizzabar.jpg",
+      "duration": 4,
+      "title": "Pizza and the World Cup.",
+      "subtitle": "Adrienne’s Pizzabar.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "world-cup",
+      "type": "video",
+      "src": "media/world-cup.mp4",
+      "duration": 8.8,
+      "trimStart": 0,
+      "fit": "contain",
+      "y": 0.5,
+      "transition": 0.2,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "title": "World Cup final watch party.",
+      "subtitle": "Central Park."
+    },
+    {
+      "id": "dumbo",
+      "type": "image",
+      "src": "media/dumbo.jpg",
+      "duration": 3,
+      "fit": "cover",
+      "y": 0.5,
+      "motion": {
+        "y": 0.62,
+        "zoom": 1.03
+      }
+    },
+    {
+      "id": "sunset",
+      "type": "image",
+      "src": "media/statue-of-liberty-sunset.jpg",
+      "duration": 3,
+      "fit": "cover",
+      "y": 0.91,
+      "motion": {
+        "y": 0.87,
+        "zoom": 1.03
+      }
+    },
+    {
+      "id": "last-day",
+      "type": "image",
+      "src": "media/last-day-of-internship.jpg",
+      "duration": 5,
+      "fit": "contain",
+      "title": "My last day of the internship.",
+      "y": 0.5,
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "last-night",
+      "type": "image",
+      "src": "media/intern-friends.jpg",
+      "duration": 5,
+      "title": "Our last night out.",
+      "subtitle": "After our last day of the internship.",
+      "y": 0.5,
+      "zoom": 1,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5
+    },
+    {
+      "id": "moving-out",
+      "type": "image",
+      "src": "media/moving-out.jpg",
+      "duration": 3.5,
+      "title": "Moving out.",
+      "y": 0.5,
+      "fit": "contain",
+      "backdrop": "ambient",
+      "x": 0.5,
+      "zoom": 1
+    },
+    {
+      "id": "end",
+      "type": "image",
+      "src": "media/night-skyline.jpg",
+      "duration": 6,
+      "fit": "cover",
+      "y": 0.55,
+      "motion": {
+        "y": 0.55,
+        "zoom": 1.02
+      },
+      "transition": 0.8
+    }
+  ]
+}

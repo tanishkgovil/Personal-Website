@@ -1,0 +1,22 @@
+{
+  "title": "Your screening",
+  "shots": [
+    {
+      "id": "opening",
+      "type": "image",
+      "src": "frame.svg",
+      "duration": 4,
+      "title": "Your screening",
+      "treatment": "title"
+    },
+    {
+      "id": "a-moment",
+      "type": "image",
+      "src": "frame.svg",
+      "duration": 5,
+      "x": 0.5,
+      "y": 0.5,
+      "motion": { "zoom": 1.04 }
+    }
+  ]
+}

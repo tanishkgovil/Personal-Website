@@ -1,0 +1,23 @@
+{
+  "title": "Your screening",
+  "cover": {
+    "title": "Your screening",
+    "image": "frame.svg",
+    "alt": "Replace this illustration with your screening’s poster."
+  },
+  "film": "film.json",
+  "scenes": [
+    {
+      "id": "first-scene",
+      "type": "image",
+      "image": "frame.svg",
+      "alt": "Replace this illustration with a moment from your story."
+    },
+    {
+      "id": "thought",
+      "type": "text",
+      "title": "Your takeaway.",
+      "body": "Add anything you want someone to explore after the film."
+    }
+  ]
+}

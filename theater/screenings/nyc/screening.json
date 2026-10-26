@@ -1,0 +1,506 @@
+{
+  "title": "A Summer in New York",
+  "stylesheet": "nyc.css",
+  "cover": {
+    "title": "A summer\nin New York.",
+    "image": "media/sunset-skyline.jpg",
+    "alt": "The Manhattan skyline at sunset, photographed from the Brooklyn Bridge.",
+    "subtitle": "Summer 2026"
+  },
+  "scenes": [
+    {
+      "id": "arrival",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "I spent the summer in NYC.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/night-skyline.jpg",
+          "alt": "The Manhattan skyline across the water at night.",
+          "y": 0.55
+        }
+      ],
+      "body": [
+        "I was interning at Hudson River Trading."
+      ]
+    },
+    {
+      "id": "apartment",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "clip",
+      "title": "My apartment for the summer.",
+      "media": [
+        {
+          "kind": "video",
+          "src": "media/apartment-tour.mp4",
+          "alt": "The final ten seconds of the apartment tour, showing the main room.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1,
+          "poster": "media/apartment-tour.jpg"
+        }
+      ]
+    },
+    {
+      "id": "knicks",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Knicks just won.",
+      "layout": "clip",
+      "media": [
+        {
+          "kind": "video",
+          "src": "media/knicks-win.mp4",
+          "poster": "media/knicks-win.jpg",
+          "alt": "Celebrating a Knicks win at the watch party",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5
+        }
+      ]
+    },
+    {
+      "id": "brooklyn",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Basketball in Brooklyn.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/brooklyn-basketball.jpg",
+          "alt": "An outdoor basketball court with the Manhattan skyline behind it.",
+          "y": 0.38
+        }
+      ],
+      "body": [
+        "I also went biking in Central Park, jet skiing, and go-karting."
+      ]
+    },
+    {
+      "id": "work",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "I interned at HRT.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/office-view.jpg",
+          "alt": "New York City through the floor-to-ceiling office windows.",
+          "y": 0.45
+        }
+      ],
+      "body": [
+        "I worked on an AI code-review agent and on Caddy’s metrics."
+      ]
+    },
+    {
+      "id": "heimdall",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Heimdall.",
+      "layout": "heimdall",
+      "body": [
+        "I built an AI code-review agent for Gerrit."
+      ]
+    },
+    {
+      "id": "interlude",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Caddy.",
+      "layout": "metrics",
+      "body": [
+        "I added monitoring to Caddy, which handles website traffic."
+      ]
+    },
+    {
+      "id": "bungalow",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Bungalow.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/bungalow-food.jpg",
+          "alt": "A table of food at Bungalow.",
+          "fit": "contain",
+          "rotation": -90,
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ],
+      "body": [
+        "The food was one of my favorite parts of the summer."
+      ]
+    },
+    {
+      "id": "vikas-khanna",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Met Vikas Khanna.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/vikas-khanna.jpg",
+          "alt": "A photograph with Vikas Khanna at Bungalow.",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "id": "khaosan",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Khaosan.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/khaosan.jpg",
+          "alt": "Several dishes and bowls of rice on the table at Khaosan.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ],
+      "body": [
+        "With my parents."
+      ]
+    },
+    {
+      "id": "beauty-and-essex",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Beauty & Essex.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/beauty-and-essex.jpg",
+          "alt": "Cherry-shaped ice cream desserts served on a white plate at Beauty & Essex.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ],
+      "body": [
+        "Ice cream–filled cherries."
+      ]
+    },
+    {
+      "id": "frida-batidos",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Frida Batidos.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/frida-batidos.jpg",
+          "alt": "A black bean burger topped with an egg, with fries at Frida Batidos.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ],
+      "body": [
+        "Best black bean burger I’ve ever had."
+      ]
+    },
+    {
+      "id": "smorgasburg",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Smorgasburg.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/smorgasburg.jpg",
+          "alt": "Food stalls and people at Smorgasburg.",
+          "fit": "cover",
+          "y": 0.55
+        }
+      ]
+    },
+    {
+      "id": "axe-throwing",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "goat of axe throwing",
+      "layout": "clip",
+      "media": [
+        {
+          "kind": "video",
+          "src": "media/axe-throw.mp4",
+          "poster": "media/axe-throw.jpg",
+          "alt": "Axe throwing under blue lights",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5
+        }
+      ]
+    },
+    {
+      "id": "july-fourth",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "July 4th.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/july-fourth.jpg",
+          "alt": "Fireworks above the New York skyline at night.",
+          "x": 0.9,
+          "y": 0.55
+        }
+      ]
+    },
+    {
+      "id": "hadestown",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "I saw Hadestown on Broadway.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/hadestown.jpg",
+          "alt": "A Hadestown Playbill held inside the theater, with the stage ahead.",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "id": "orchestra",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Return of the Jedi.",
+      "layout": "clip",
+      "media": [
+        {
+          "kind": "video",
+          "src": "media/star-wars.mp4",
+          "poster": "media/star-wars.jpg",
+          "alt": "Return of the Jedi with a live orchestra.",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5
+        }
+      ],
+      "body": [
+        "With a live orchestra."
+      ]
+    },
+    {
+      "id": "pizza-and-world-cup",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Pizza and the World Cup.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/adriennes-pizzabar.jpg",
+          "alt": "Pizza on an outdoor table at Adrienne’s Pizzabar.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ],
+      "body": [
+        "Adrienne’s Pizzabar."
+      ]
+    },
+    {
+      "id": "world-cup",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "World Cup final watch party.",
+      "layout": "clip",
+      "media": [
+        {
+          "kind": "video",
+          "src": "media/world-cup.mp4",
+          "poster": "media/world-cup.jpg",
+          "alt": "The World Cup final watch party in Central Park.",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5
+        }
+      ],
+      "body": [
+        "Central Park."
+      ]
+    },
+    {
+      "id": "dumbo",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "DUMBO.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/dumbo.jpg",
+          "alt": "The Manhattan Bridge framed by buildings in DUMBO at night.",
+          "fit": "cover",
+          "y": 0.5
+        }
+      ]
+    },
+    {
+      "id": "views",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "Statue of Liberty at sunset.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/statue-of-liberty-sunset.jpg",
+          "alt": "The Statue of Liberty silhouetted against the setting sun.",
+          "fit": "cover",
+          "y": 0.91
+        }
+      ]
+    },
+    {
+      "id": "afterwards",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "title": "My last day of the internship.",
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/last-day-of-internship.jpg",
+          "alt": "Looking out over New York on the last day of the internship.",
+          "fit": "contain",
+          "y": 0.5,
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "id": "last-night",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Our last night out.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/intern-friends.jpg",
+          "alt": "Intern friends together on their last night out after the internship.",
+          "y": 0.5,
+          "zoom": 1,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5
+        }
+      ],
+      "body": [
+        "After our last day of the internship."
+      ]
+    },
+    {
+      "id": "moving-out",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "title": "Moving out.",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/moving-out.jpg",
+          "alt": "The record player and artwork in the summer apartment.",
+          "y": 0.5,
+          "fit": "contain",
+          "backdrop": "ambient",
+          "x": 0.5,
+          "zoom": 1
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "type": "custom",
+      "module": "story-scenes.js",
+      "fullBleed": true,
+      "layout": "photo",
+      "media": [
+        {
+          "kind": "image",
+          "src": "media/night-skyline.jpg",
+          "alt": "The Manhattan skyline across the water at night.",
+          "fit": "cover",
+          "y": 0.55
+        }
+      ]
+    }
+  ],
+  "film": "film.json",
+  "lobby": {
+    "image": "media/dumbo.jpg",
+    "entranceImage": "media/night-skyline.jpg"
+  }
+}

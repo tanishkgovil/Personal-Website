@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "nyc",
+    "title": "A Summer in New York",
+    "cover": {
+      "title": "A summer\nin New York.",
+      "image": "media/sunset-skyline.jpg",
+      "alt": "The Manhattan skyline at sunset, photographed from the Brooklyn Bridge.",
+      "subtitle": "Summer 2026"
+    },
+    "lobby": {
+      "image": "media/dumbo.jpg",
+      "entranceImage": "media/night-skyline.jpg"
+    },
+    "film": "film.json",
+    "duration": 139
+  }
+]
